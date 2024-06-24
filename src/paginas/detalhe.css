@@ -1,0 +1,166 @@
+.reclamacao-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 768px) {
+    .botoes-acoes .botao-adicionar {
+        background-color: #007bff; /* Cor azul para o botão adicionar */
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        margin: 5px;
+    }
+
+    .botoes-acoes .botao-adicionar:hover {
+        background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+    }
+}
+
+
+.reclamacao-detalhes h1,
+.reclamacao-detalhes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reclamacao-detalhes > div,
+.comentarios-lista,
+.reclamacao-form,
+.novo-comentario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.reclamacao-detalhes label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.reclamacao-detalhes input,
+.reclamacao-detalhes textarea,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.reclamacao-detalhes button,
+.comentario-info button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.reclamacao-detalhes button:hover,
+.comentario-info button:hover {
+    background-color: #0056b3;
+}
+
+.comentarios-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.comentario-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.comentario-texto {
+    margin-bottom: 10px;
+}
+
+.comentario-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario-autor {
+    font-weight: bold;
+}
+
+.comentario-data {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    align-items: center;
+    margin: 0px auto;
+    margin-left: 90px;
+}
+
+@media (max-width: 768px) {
+    .reclamacao-detalhes > div,
+    .comentarios-lista,
+    .reclamacao-form,
+    .novo-comentario {
+        padding: 15px;
+    }
+
+    .botoes-acoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espaçamento entre os botões */
+    }
+
+    .botao-deletar {
+        background-color: #ff4d4d; /* Cor vermelha para o botão de deletar */
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        margin: 5px;
+    }
+
+    .botao-deletar:hover {
+        background-color: #cc0000; /* Cor vermelha mais escura ao passar o mouse */
+    }
+
+    .botoes-acoes .botao-adicionar {
+        background-color: #007bff; /* Cor azul para o botão adicionar */
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        margin: 5px;
+    }
+
+    .botoes-acoes .botao-adicionar:hover {
+        background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+    }
+}

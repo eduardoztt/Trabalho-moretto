@@ -1,0 +1,85 @@
+/* Estilos para o botão "Criar Nova Reclamação" */
+.pagina-principal button {
+    margin-bottom: 20px;
+    padding: 12px 24px; /* Ajusta o padding para um tamanho mais confortável */
+    background-color: #2f26b2; /* Cor de fundo verde para o botão */
+    color: #fff; /* Cor do texto branca */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+}
+
+.pagina-principal button:hover {
+    background-color: #2f4086; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos para o botão dentro do link (removendo borda e sublinhado) */
+.pagina-principal button a {
+    text-decoration: none;
+    color: inherit;
+}
+.reclamacao-detalhes,
+.reclamacao-detalhes * {
+    color: black !important; /* Define a cor do texto para preto com !important */
+}
+.lista-reclamacoes .reclamacao-link {
+    color: black; /* Define a cor do link das reclamações como preto */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+.lista-reclamacoes .reclamacao-link:hover {
+    color: #0056b3; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.reclamacao-detalhes button,
+.comentario-info button,
+.reclamacao-detalhes .botao-deletar,
+.reclamacao-detalhes .botao-adicionar {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff; /* Mantém o texto branco para os botões */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.reclamacao-detalhes button:hover,
+.comentario-info button:hover,
+.reclamacao-detalhes .botao-deletar:hover,
+.reclamacao-detalhes .botao-adicionar:hover {
+    background-color: #0056b3;
+}
+
+.reclamacao-detalhes .botao-deletar {
+    background-color: #ff4d4d;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.reclamacao-detalhes .botao-deletar:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+    .reclamacao-detalhes button,
+    .comentario-info button,
+    .reclamacao-detalhes .botao-deletar,
+    .reclamacao-detalhes .botao-adicionar {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+.barra-pesquisa input[type="text"] {
+    width: 80%; /* Define a largura da barra de pesquisa para ocupar 100% do seu contêiner */
+    padding: 10px; /* Ajusta o preenchimento interno para um tamanho confortável */
+    font-size: 16px; /* Define o tamanho da fonte para 16 pixels */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+}
