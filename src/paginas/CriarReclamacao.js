@@ -6,7 +6,7 @@ import './reclamacao.css';
 const CriarReclamacao = () => {
   const [novoTitulo, setNovoTitulo] = useState('');
   const [novoConteudo, setNovoConteudo] = useState('');
-  const [showMessage, setShowMessage] = useState(false); // State for message display
+  const [showMessage, setShowMessage] = useState(false); 
   const history = useHistory();
 
   const handleSubmit = async (event) => {
@@ -20,19 +20,17 @@ const CriarReclamacao = () => {
         email: userEmail,
       });
 
-      // Redirecionar para a página principal após o envio
       history.push('/principal');
     } catch (error) {
       console.error('Erro ao criar reclamação:', error);
     }
 
-    // Limpar os campos do formulário após 1 segundo
     setTimeout(() => {
       setNovoTitulo('');
       setNovoConteudo('');
-      setShowMessage(true); // Show message after clearing fields
+      setShowMessage(true); 
       setTimeout(() => {
-        setShowMessage(false); // Hide message after 2 seconds
+        setShowMessage(false); 
       }, 2000);
     }, 1000);
   };

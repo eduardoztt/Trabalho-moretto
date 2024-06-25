@@ -53,7 +53,7 @@ const ReclamacaoDetalhes = () => {
   const handleDeleteComentario = async (comentarioId) => {
     try {
       await axios.delete(`http://localhost:5000/comentarios/${comentarioId}`);
-      await fetchReclamacao(); // Atualiza a lista de comentários após a exclusão
+      await fetchReclamacao(); 
     } catch (error) {
       console.error(`Erro ao deletar comentário com ID ${comentarioId}:`, error);
     }
@@ -62,7 +62,7 @@ const ReclamacaoDetalhes = () => {
   const handleDeleteReclamacao = async () => {
     try {
       await axios.delete(`http://localhost:5000/reclamacoes/${id}`);
-      window.location.href = '/principal'; // Redireciona para a página principal após a deleção
+      window.location.href = '/principal'; 
     } catch (error) {
       console.error(`Erro ao deletar reclamação com ID ${id}:`, error);
     }
@@ -76,7 +76,7 @@ const ReclamacaoDetalhes = () => {
       });
 
       setEditando(false);
-      window.location.reload(); // Recarrega a página após salvar as alterações
+      window.location.reload();
     } catch (error) {
       console.error(`Erro ao atualizar reclamação com ID ${id}:`, error);
     }
@@ -137,7 +137,7 @@ const ReclamacaoDetalhes = () => {
           {editando ? (
             <button onClick={async () => {
               await handleUpdateReclamacao();
-              window.location.reload(); // Recarrega a página após salvar as alterações
+              window.location.reload(); 
             }}>Salvar</button>
           ) : (
             <>

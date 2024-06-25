@@ -1,22 +1,22 @@
 .pagina-criar-reclamacao {
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* altura mínima de 100% da altura da viewport */
-    background-color: #f0f0f0; /* fundo cinza claro */
-    padding: 20px; /* espaçamento interno */
-    box-sizing: border-box; /* inclui padding no tamanho total */
-    margin: 0; /* remova qualquer margem para o body */
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+    box-sizing: border-box; 
+    margin: 0; 
 }
 
 .container-formulario {
     width: 100%;
-    max-width: 500px; /* largura máxima do container */
-    padding: 20px; /* espaçamento interno */
-    background-color: #fff; /* fundo branco para o container */
+    max-width: 500px; 
+    padding: 20px; 
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* inclui padding e borda no tamanho total */
-    margin: 0 auto; /* centraliza o container horizontalmente */
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .topo-pagina {
@@ -28,7 +28,7 @@
     display: inline-block;
     margin-bottom: 1s0px;
     text-decoration: none;
-    color: #007bff; /* cor do link */
+    color: #007bff; 
 }
 
 .form-nova-reclamacao label {
@@ -39,17 +39,17 @@
 
 .form-nova-reclamacao input,
 .form-nova-reclamacao textarea {
-    width: calc(100% - 20px); /* largura calculada considerando o padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* inclui padding e borda no tamanho total */
+    box-sizing: border-box; 
 }
 
 .form-nova-reclamacao button {
-    display: block; /* transforma o botão em bloco para ocupar a largura disponível */
-    width: 100%; /* ocupa toda a largura do container pai */
+    display: block; 
+    width: 100%; 
     padding: 10px;
     border: none;
     background-color: #007bff;

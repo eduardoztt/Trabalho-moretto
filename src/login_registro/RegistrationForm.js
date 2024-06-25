@@ -32,7 +32,6 @@ const RegistrationForm = () => {
         }
       });
 
-    // Força o redirecionamento após 1 segundo, independentemente do resultado da requisição
     setTimeout(() => {
       window.location.href = 'http://localhost:3000/';
     }, 1000);

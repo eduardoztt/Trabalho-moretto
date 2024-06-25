@@ -15,7 +15,7 @@
 }
 @media (max-width: 768px) {
     .botoes-acoes .botao-adicionar {
-        background-color: #007bff; /* Cor azul para o botão adicionar */
+        background-color: #007bff; 
         color: #fff;
         border-radius: 4px;
         cursor: pointer;
@@ -26,7 +26,7 @@
     }
 
     .botoes-acoes .botao-adicionar:hover {
-        background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+        background-color: #0056b3; 
     }
 }
 
@@ -131,11 +131,11 @@ form textarea {
     .botoes-acoes {
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Espaçamento entre os botões */
+        gap: 10px; 
     }
 
     .botao-deletar {
-        background-color: #ff4d4d; /* Cor vermelha para o botão de deletar */
+        background-color: #ff4d4d; 
         color: #fff;
         border-radius: 4px;
         cursor: pointer;
@@ -146,11 +146,11 @@ form textarea {
     }
 
     .botao-deletar:hover {
-        background-color: #cc0000; /* Cor vermelha mais escura ao passar o mouse */
+        background-color: #cc0000; 
     }
 
     .botoes-acoes .botao-adicionar {
-        background-color: #007bff; /* Cor azul para o botão adicionar */
+        background-color: #007bff; 
         color: #fff;
         border-radius: 4px;
         cursor: pointer;
@@ -161,6 +161,6 @@ form textarea {
     }
 
     .botoes-acoes .botao-adicionar:hover {
-        background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+        background-color: #0056b3; 
     }
 }

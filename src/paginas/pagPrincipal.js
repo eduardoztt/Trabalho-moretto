@@ -8,7 +8,7 @@ const PaginaPrincipal = () => {
   const [reclamacoesFiltradas, setReclamacoesFiltradas] = useState([]);
   const [termoPesquisa, setTermoPesquisa] = useState('');
   const [filtroEmail, setFiltroEmail] = useState(false); 
-  const [userName, setUserName] = useState(''); // Estado para armazenar o nome do usuário
+  const [userName, setUserName] = useState(''); 
   const userEmail = localStorage.getItem('userEmail'); 
 
   useEffect(() => {
@@ -16,15 +16,15 @@ const PaginaPrincipal = () => {
       try {
         const response = await axios.get(`http://localhost:5000/usuarios?email=${userEmail}`);
         if (response.data) {
-          setUserName(response.data.name); // Define o nome do usuário
+          setUserName(response.data.name); 
         }
       } catch (error) {
         console.error('Erro ao buscar nome do usuário:', error);
       }
     };
 
-    fetchUserName(); // Chama a função para buscar o nome do usuário
-  }, [userEmail]); // Executa quando o userEmail é atualizado
+    fetchUserName(); 
+  }, [userEmail]); 
 
   useEffect(() => {
     const fetchReclamacoes = async () => {

@@ -22,8 +22,8 @@ const LoginForm = ({ onSuccess }) => {
         if (userData && typeof userData === 'object' && Object.keys(userData).length > 0) {
           setMessage('Login concluído!');
           setIsLogged(true);
-          localStorage.setItem('userEmail', loginData.email); // Save email to localStorage
-          onSuccess();  // Call onSuccess prop
+          localStorage.setItem('userEmail', loginData.email); 
+          onSuccess();  
           setTimeout(() => {
             window.location.href = '/principal';
           }, 100);
